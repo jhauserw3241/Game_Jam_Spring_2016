@@ -2,31 +2,25 @@
 using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
-	public const float speed = 5f;
-	private float movex = 0f;
-	private float movey = 0f;
-	private Rigidbody2D rb;
+	public static float speed = 1f;
+	protected float movex = 0f;
+	protected float movey = 0f;
+	protected Rigidbody2D rb;
 
 	// Use this for initialization
-	void Start () {
-		// Set gravity to fall right
-		Physics2D.gravity = new Vector2 (10f, 0);
-	}
-
-	void FixedUpdate() {
-		// Get insulin rigidbody
+	public void Start () {
+		// Alter player movement
 		rb = GetComponent<Rigidbody2D>();
 
-		// Horizontal movement
-		movex = Input.GetAxis ("Horizontal");
-
-		// Vertical movement
-		movey = Input.GetAxis ("Vertical");
-
-		// Alter Insulin movement
-		rb.velocity = new Vector2 (movex * speed, movey * speed);
+		// Add cluster to public cluster list
+		BackgroundScript.clusters.Add(rb);
 	}
 	
+	public void move(float x, float y) {
+		//Debug.Log (rb);
+		rb.velocity = new Vector2(x * speed, y * speed);
+	}
+
 	// Update is called once per frame
 	void Update () {
 	
