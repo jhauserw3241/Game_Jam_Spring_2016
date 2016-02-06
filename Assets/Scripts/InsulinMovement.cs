@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StartSequence : MonoBehaviour {
+public class InsulinMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
