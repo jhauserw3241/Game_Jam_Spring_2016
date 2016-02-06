@@ -1,0 +1,31 @@
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 750 Ti (ID=0x1380)
+    Vendor:   NVIDIA
+    VRAM:     1993 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: U:\Game_Jam_Spring_2016\Game_Jam_Spring_2016\Level1Full_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading U:\Game_Jam_Spring_2016\Game_Jam_Spring_2016\Level1Full_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: U:\Game_Jam_Spring_2016\Game_Jam_Spring_2016\Level1Full_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading U:\Game_Jam_Spring_2016\Game_Jam_Spring_2016\Level1Full_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: U:\Game_Jam_Spring_2016\Game_Jam_Spring_2016\Level1Full_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading U:\Game_Jam_Spring_2016\Game_Jam_Spring_2016\Level1Full_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: U:\Game_Jam_Spring_2016\Game_Jam_Spring_2016\Level1Full_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading U:\Game_Jam_Spring_2016\Game_Jam_Spring_2016\Level1Full_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: U:\Game_Jam_Spring_2016\Game_Jam_Spring_2016\Level1Full_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading U:\Game_Jam_Spring_2016\Game_Jam_Spring_2016\Level1Full_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.693 seconds
+desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: U:\Game_Jam_Spring_2016\Game_Jam_Spring_2016\Level1Full_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: U:\Game_Jam_Spring_2016\Game_Jam_Spring_2016\Level1Full_Data\Managed\System.dll (this message is harmless)
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.734995 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 172.
+Total: 0.150227 ms (FindLiveObjects: 0.006518 ms CreateObjectMapping: 0.017381 ms MarkObjects: 0.120430 ms  DeleteObjects: 0.005586 ms)
+

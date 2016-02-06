@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{5A0830AB-5FDF-7ACD-B4AE-E15CC62877C7}</ProjectGuid>
+	<ProjectGuid>{0B5DDE90-F32B-6ED3-19DE-357DCD99E804}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -47,8 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Germ.cs" />
+     <Compile Include="Assets\Scripts\Logo.cs" />
      <Compile Include="Assets\Scripts\MainMenuOptions.cs" />
-     <Compile Include="Assets\Scripts\StartSequence.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
