@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Germ.cs" />
      <Compile Include="Assets\Scripts\Logo.cs" />
      <Compile Include="Assets\Scripts\MainMenuOptions.cs" />
