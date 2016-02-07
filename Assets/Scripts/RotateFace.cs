@@ -2,9 +2,9 @@
 using System.Collections;
 
 public class RotateFace : MonoBehaviour {
-	float rotateAngle = 2f;
-	float modVal = 1f;
-	float degCount = 0f;
+	int rotateCount = 3;
+	float deltaAngle = 1f;
+	int modVal = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -20,22 +20,14 @@ public class RotateFace : MonoBehaviour {
 		float zDeg = objTransProps.eulerAngles.z;
 		Debug.Log (zDeg.ToString ());
 
-		//if( (zDeg >= 30f) || (zDeg <= -30f))
-		//{
-		//	modVal *= -1f;
-		//}
-
-		if( (degCount >= 30f) || (degCount <= -30f))
+		if (rotateCount > 30 || rotateCount < -30)
 		{
-			modVal *= -1f;
+			modVal *= -1;
 		}
-		degCount = degCount + (rotateAngle * modVal);
-
-		//Debug.Log ((zDeg + (rotateAngle * modVal)).ToString ());
-		//Debug.Log (modVal.ToString ());
+		rotateCount += modVal;
 
 		// Rotate object
 		//objTransProps.Rotate(Vector3.forward, (zDeg + (rotateAngle * modVal)), Space.Self);
-		objTransProps.Rotate(Vector3.forward, degCount, Space.Self);
+		objTransProps.Rotate(new Vector3(0, 0, modVal * deltaAngle), Space.Self);
 	}
 }
