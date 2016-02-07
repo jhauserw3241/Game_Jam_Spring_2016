@@ -5,7 +5,7 @@ public class Germ : MonoBehaviour
 {
 	private Rigidbody2D myRigidbody;
 	bool hasInsulin = false;
-	double speed = 2.0;
+	float speed = 2f;
 
 	// Use this for initialization
 	void Start()
@@ -17,19 +17,20 @@ public class Germ : MonoBehaviour
 	void KillInsulin()
 	{
 		if (hasInsulin) {
-			speed = speed * 0.6;
+			speed = speed * (float)0.6;
 		}
 	}
 	
 	// Update is called once per frame
 	void Update()
 	{
+		//float horizontal = Input.GetAxis ("Horizontal");
 		HandleMovement();
 	}
 
 	// Handle the movement to the left of the screen
 	private void HandleMovement()
 	{
-		myRigidbody.velocity = Vector2.left; // x = -1, y = 0
+		myRigidbody.velocity = new Vector2(-speed, 0); // x = -1, y = 0
 	}
 }
