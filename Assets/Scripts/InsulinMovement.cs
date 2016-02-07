@@ -33,7 +33,7 @@ public class InsulinMovement : MonoBehaviour {
 		// Move towards nearest cluster
 		float xdif = nearCluster.x - p.x;
 		float ydif = nearCluster.y - p.y;
-		float peri = xdif + ydif;
+		float peri = Mathf.Abs(xdif) + Mathf.Abs(ydif);
 		rb.velocity = new Vector2 ((xdif/peri) * speed, (ydif/peri) * speed);
 	}
 	
