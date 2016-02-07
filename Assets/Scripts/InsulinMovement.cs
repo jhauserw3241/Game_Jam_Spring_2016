@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class InsulinMovement : MonoBehaviour {
-	public static float speed = 1f;
+	public static float speed = 1.1f;
 	private Rigidbody2D rb;
 	private Rigidbody2D cluster1;
 	private Rigidbody2D cluster2;
