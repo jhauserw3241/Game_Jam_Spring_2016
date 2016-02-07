@@ -2,22 +2,25 @@
 using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
-	private float movex = 0f;
-	private float movey = 0f;
-	private Rigidbody2D rb;
+	public static float speed = 1f;
+	protected float movex = 0f;
+	protected float movey = 0f;
+	protected Rigidbody2D rb;
 
 	// Use this for initialization
-	void Start () {
+	public void Start () {
+		// Alter player movement
+		rb = GetComponent<Rigidbody2D>();
+
+		// Add cluster to public cluster list
+		BackgroundScript.clusters.Add(rb);
+	}
 	
+	public void move(float x, float y) {
+		//Debug.Log (rb);
+		rb.velocity = new Vector2(x * speed, y * speed);
 	}
 
-	void FixedUpdate() {
-		rb = GetComponent<Rigidbody2D>();
-		movex = Input.GetAxis ("Horizontal");
-		movey = Input.GetAxis ("Vertical");
-		Debug.Log("x: " + movex + " y: " + movey);
-	}
-	
 	// Update is called once per frame
 	void Update () {
 	
